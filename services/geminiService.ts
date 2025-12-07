@@ -59,7 +59,7 @@ export const getTradingAnalysis = async (): Promise<AnalysisReport> => {
 
   try {
     const response = await ai.models.generateContent({
-      model: "gemini-3-pro-preview",  // gemini-2.5-pro, gemini-3-pro-preview
+      model: "gemini-2.5-pro",  // gemini-2.5-pro, gemini-3-pro-preview
       contents: prompt,
       config: {
         tools: [{ googleSearch: {} }],
